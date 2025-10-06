@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Qatar Cancer Conference 2025</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-container">
+                <img src="images/qcs_emblem_02.png" alt="Qatar Cancer Society Logo" class="logo">
+                <div class="logo-text">
+                    <h1>QCC 2025</h1>
+                    <p>Qatar Cancer Society</p>
+                </div>
+            </a>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="committee.html">Committee</a></li>
+                    <li><a href="registration.html" class="active">Registration</a></li>
+                    <li><a href="donation.html">Donation</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Join the <span class="hero-highlight">Conference</span></h2>
+            <p>Be part of this impactful one-day event by registering below</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="section">
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <h2 class="section-title">Registration Categories</h2>
+
+                <div class="registration-cards">
+                    <div class="reg-card">
+                        <h3>Healthcare Professionals</h3>
+                        <div class="price">QAR 200</div>
+                        <ul class="reg-includes">
+                            <li>✓ Access to all sessions</li>
+                            <li>✓ Interactive workshops</li>
+                            <li>✓ Conference kit</li>
+                            <li>✓ Lunch & refreshments</li>
+                            <li>✓ Certificate of participation</li>
+                            <li>✓ Networking opportunities</li>
+                        </ul>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="showRegistrationForm('professional')">Register Now</button>
+                    </div>
+
+                    <div class="reg-card">
+                        <h3>Students</h3>
+                        <div class="price">QAR 50</div>
+                        <ul class="reg-includes">
+                            <li>✓ Access to all sessions</li>
+                            <li>✓ Interactive workshops</li>
+                            <li>✓ Conference kit</li>
+                            <li>✓ Lunch & refreshments</li>
+                            <li>✓ Certificate of participation</li>
+                            <li>✓ Student ID required</li>
+                        </ul>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="showRegistrationForm('student')">Register Now</button>
+                    </div>
+
+                    <div class="reg-card" style="border-top-color: var(--secondary-color);">
+                        <h3>Public / Volunteers</h3>
+                        <div class="price" style="color: var(--primary-color);">FREE</div>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">(Limited seats available)</p>
+                        <ul class="reg-includes">
+                            <li>✓ Access to all sessions</li>
+                            <li>✓ Interactive workshops</li>
+                            <li>✓ Conference kit</li>
+                            <li>✓ Lunch & refreshments</li>
+                            <li>✓ Certificate of participation</li>
+                        </ul>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="showRegistrationForm('public')">Register Now</button>
+                    </div>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 4rem;">What's Included</h2>
+                <div class="highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🎓</div>
+                        <h3>Full Access</h3>
+                        <p>Attend all keynote sessions, panel discussions, and research presentations</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🛠️</div>
+                        <h3>Workshops</h3>
+                        <p>Participate in hands-on workshops on nutrition, lifestyle, and wellness</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🍽️</div>
+                        <h3>Catering</h3>
+                        <p>Enjoy complimentary coffee breaks and a nutritious lunch</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">📦</div>
+                        <h3>Conference Kit</h3>
+                        <p>Receive a comprehensive kit with materials and resources</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">📜</div>
+                        <h3>Certificate</h3>
+                        <p>Get a digital certificate of participation for your records</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🤝</div>
+                        <h3>Networking</h3>
+                        <p>Connect with professionals, researchers, and community advocates</p>
+                    </div>
+                </div>
+
+                <!-- Registration Form Modal -->
+                <div id="registrationModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 2000; overflow-y: auto;">
+                    <div style="max-width: 600px; margin: 2rem auto; background: white; border-radius: 10px; padding: 2rem; position: relative;">
+                        <button onclick="closeRegistrationForm()" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 2rem; cursor: pointer; color: var(--text-light);">&times;</button>
+
+                        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;" id="formTitle">Registration Form</h2>
+
+                        <form id="registrationForm" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Full Name *</label>
+                                <input type="text" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                            </div>
+
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email Address *</label>
+                                <input type="email" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                            </div>
+
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Phone Number *</label>
+                                <input type="tel" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                            </div>
+
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Organization / Institution</label>
+                                <input type="text" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                            </div>
+
+                            <div id="studentIdField" style="display: none;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Student ID Number *</label>
+                                <input type="text" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                            </div>
+
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Dietary Requirements / Special Needs</label>
+                                <textarea style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; resize: vertical;" rows="3"></textarea>
+                            </div>
+
+                            <div style="background: var(--bg-light); padding: 1rem; border-radius: 5px; margin-top: 1rem;">
+                                <p style="font-weight: 600; margin-bottom: 0.5rem;">Registration Fee: <span id="feeAmount" style="color: var(--primary-color);">QAR 200</span></p>
+                                <p style="font-size: 0.9rem; color: var(--text-light);">Payment instructions will be sent to your email upon submission.</p>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Submit Registration</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div style="background: var(--bg-light); padding: 2rem; border-radius: 10px; margin-top: 3rem; text-align: center;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Need Help?</h3>
+                    <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;">
+                        If you have any questions about registration, please don't hesitate to contact us.
+                    </p>
+                    <p style="color: var(--text-light);">
+                        📧 <strong>info@qcs.qa</strong> | 📞 <strong>44847777</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>📧 info@qcs.qa</p>
+                <p>📞 44847777</p>
+                <p>📞 44847778</p>
+                <p>🌐 www.qcs.qa</p>
+            </div>
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p>Barwa Towers, Building 2 – Floor 20</p>
+                <p>P.O. Box 22944</p>
+                <p>Doha, Qatar</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/qatarcancersociety/" target="_blank" title="Instagram">
+                        <img src="images/icon_instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/user/qcsqatar" target="_blank" title="YouTube">
+                        <img src="images/icon_youtube.png" alt="YouTube">
+                    </a>
+                    <a href="https://x.com/QCS_Qatar" target="_blank" title="X (Twitter)">
+                        <img src="images/icon_x.png" alt="X">
+                    </a>
+                    <a href="https://www.facebook.com/qatarcancersociety2" target="_blank" title="Facebook">
+                        <img src="images/icon_fb.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="about.html">About QCS</a>
+                <a href="program.html">Program</a>
+                <a href="registration.html">Registration</a>
+                <a href="donation.html">Donation</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Qatar Cancer Society. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
