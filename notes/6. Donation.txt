@@ -1,0 +1,13 @@
+Donation
+This page provides options and information for donating.
+Why Donate?
+•	Explain impact: how donation funds are used (awareness, support services, research, etc.)
+Donation Methods
+•	Online donation (credit card, PayPal, local gateway)
+•	Offline donation / bank transfer info
+•	Recurring donation / pledge options
+Donor Recognition / Transparency
+•	Show list of major donors or partners
+•	Annual reports, financial transparency
+Tax / Legal Info
+•	Clarify tax status, regulations under Regulatory Authority for Charitable Activities

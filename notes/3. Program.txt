@@ -1,0 +1,18 @@
+Program
+Here you describe the programs
+
+Opening Keynote by Dr. Hadi 2.0
+
+Conference Schedule
+
+Time	Session	Speaker / Moderator
+08:30 – 09:00	Registration & Welcome Coffee	—
+09:00 – 09:30	Opening Ceremony	QCS Dr. Hadi 2.0
+09:30 – 10:15	Keynote: “Cancer Prevention in Qatar – Progress and Challenges”	Dr. [Name]
+10:15 – 11:00	Panel: “Patient Support and Community Engagement”	QCS Experts
+11:00 – 11:15	Coffee Break	—
+11:15 – 12:30	Research Highlights: Innovations in Early Detection	Researchers
+12:30 – 13:30	Lunch Break	—
+13:30 – 15:00	Workshop: Nutrition, Lifestyle, and Wellness	Dieticians & Trainers
+15:00 – 16:00	Survivor Stories: Living with Hope	Panel
+16:00 – 16:30	Closing Remarks & Award Ceremony	QCS Leadership
